@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BLITHE"
+        android:textColor="#BF40BF"
+        android:textSize="48pt"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_gamers"
+        android:textColor="#FFFFFF"
+        android:textSize="11pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="29dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to"
+        android:textColor="#FFFFFF"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <Button
+        android:id="@+id/GetStarted"
+        android:layout_width="283dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#BF40BF"
+        android:text="@string/GetStarted"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/controller"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="359dp"
+        android:contentDescription="@string/controller" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="397dp"
+        android:layout_height="93dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blured"
+        tools:layout_editor_absoluteY="473dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/blured" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blured"
+        tools:layout_editor_absoluteY="91dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/blured" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="282dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blury_line"
+        tools:layout_editor_absoluteY="51dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/blury_line" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="303dp"
+        android:layout_height="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blury_line"
+        tools:layout_editor_absoluteY="308dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/blury_line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

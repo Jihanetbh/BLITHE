@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BLITHE</string>
+    <string name="BLITHE">BLITHE</string>
+    <string name="GetStarted">Get Started</string>
+    <string name="hello_gamers">HELLO GAMERS</string>
+    <string name="welcome_to">WELCOME TO</string>
+    <string name="controller">controller</string>
+    <string name="blured">Blured</string>
+    <string name="blury_line">blury_line</string>
 </resources>
