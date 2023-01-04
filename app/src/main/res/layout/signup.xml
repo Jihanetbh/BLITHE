@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1E1E1E"
-    tools:context=".SignupSigninBlithe"
     tools:ignore="ExtraText">
 
 
@@ -121,7 +120,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <ImageButton
         android:id="@+id/flecheBack"
@@ -133,5 +132,115 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="347dp"
+        android:layout_height="20dp"
+        android:src="@drawable/white_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="180dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="347dp"
+        android:layout_height="20dp"
+        android:src="@drawable/white_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="225dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="347dp"
+        android:layout_height="20dp"
+        android:src="@drawable/white_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="270dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="347dp"
+        android:layout_height="20dp"
+        android:src="@drawable/white_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="315dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="347dp"
+        android:layout_height="20dp"
+        android:src="@drawable/white_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="360dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="160dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="250dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="295dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

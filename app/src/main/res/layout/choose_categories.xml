@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:ignore="ExtraText">
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Blithe"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24pt"
+        android:textStyle="bold|italic"
+        android:shadowColor="#BF40BF"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_favorite_categories"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/action"
+        android:textColor="#FFFFFF"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:text="@string/adventure"
+        android:backgroundTint="@android:color/transparent"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:textSize="4.5pt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/cross_platform"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/casual"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/exploration"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:text="@string/fighting"
+        android:backgroundTint="@android:color/transparent"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:textSize="4.5pt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="81dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/horror"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/indie"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="61dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/mmo"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/multiplayer"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/open_world"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/platformer"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="76dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/puzzle"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="77dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Racing"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="71dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Retro"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="101dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Rogue-Lite"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="56dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="RPG"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="87dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Shooter"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="104dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Simulation"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Single Player"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/space"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/sports"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="84dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/stealth"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="93dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/strategy"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/survival"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="129dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/tower_defense"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/turn_based"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/vr"
+        android:textSize="4.5pt"
+        app:cornerRadius="10dp"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="26dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/allo6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="39dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="615dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/allo6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="39dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/croix_croix"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="39dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/croix_croix"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="63dp"
+        android:layout_height="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/croix_croix3"
+        tools:layout_editor_absoluteY="680dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/confirm_button3"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:background="@drawable/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+</androidx.constraintlayout.widget.ConstraintLayout>
