@@ -21,8 +21,6 @@ public class welcomeactivity extends AppCompatActivity {
                 openGetStarted();
             }
         });
-
-
     }
     public void openGetStarted() {
         Intent intent = new Intent(this,signupsigninact.class);
