@@ -8,12 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUpAct extends AppCompatActivity {
     private ImageButton back1;
+    private ImageButton confirm1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
         back1 = (ImageButton) findViewById(R.id.flecheBack);
+        confirm1 = (ImageButton) findViewById(R.id.confirm_button);
 
         back1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,10 +23,21 @@ public class SignUpAct extends AppCompatActivity {
                 goback();
             }
         });
+        confirm1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Confirm1();
+            }
+        });
     }
+
 
     public void goback() {
         Intent intent = new Intent(this, signupsigninact.class);
+        startActivity(intent);
+    }
+    public void Confirm1() {
+        Intent intent = new Intent(this, HomeAct.class);
         startActivity(intent);
     }
 }
