@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1E1E1E"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:id="@+id/drawerLayout">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/camera_container"
         android:layout_width="match_parent"
@@ -130,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/sidebarmenu"
-        android:background="@android:color/black"
+        android:background="@android:color/holo_purple"
         android:layout_gravity="start"
         />
 

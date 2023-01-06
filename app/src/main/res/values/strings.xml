@@ -42,4 +42,6 @@
     <string name="strategy">Strategy</string>
     <string name="search">Search</string>
     <string name="country">Country</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
