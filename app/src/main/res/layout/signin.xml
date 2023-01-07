@@ -21,12 +21,11 @@
         android:shadowDx="1"
         android:shadowDy="2"
         android:shadowRadius="10"
+        android:layout_marginBottom="655dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,12 +39,11 @@
         android:shadowDx="-3"
         android:shadowDy="6"
         android:shadowRadius="12"
+        android:layout_marginBottom="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135"
         tools:ignore="HardcodedText" />
 
     <ImageView
@@ -55,7 +53,6 @@
         android:layout_marginTop="52dp"
         android:src="@drawable/line"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,6 +63,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/allo6"
+        android:layout_marginLeft="20dp"
+        app:layout_goneMarginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,7 +139,8 @@
         android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="190dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="195dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -150,7 +150,8 @@
         android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="235dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="230dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -161,8 +162,7 @@
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="170dp"
+        app:layout_constraintBaseline_toTopOf="@+id/imageView21"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -173,8 +173,8 @@
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="215dp"
+
+        app:layout_constraintBaseline_toTopOf="@+id/imageView22"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
