@@ -1,6 +1,7 @@
 package com.example.blithe;
 import androidx.appcompat.app.ActionBar;
 import android.content.Intent;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.os.Bundle;
 import android.view.Menu;
@@ -56,9 +57,21 @@ public class HomeAct extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.logout:
                 // Open the sign in activity
-                Intent signInIntent = new Intent(this, SignInAct.class);
-                startActivity(signInIntent);
+                Intent SignOutIntent = new Intent(this, SignInAct.class);
+                Log.d("HomeAct", "Starting sign in activity with intent: " + SignOutIntent);
+                startActivity(SignOutIntent);
                 return true;
+            case R.id.profile:
+                // Open the sign in activity
+                Intent OpenProfileIntent = new Intent(this, ProfileAct.class);
+                startActivity(OpenProfileIntent);
+                return true;
+            case R.id.wishlist:
+                // Open the sign in activity
+                Intent OpenWishList = new Intent(this, WishListAct.class);
+                startActivity(OpenWishList);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

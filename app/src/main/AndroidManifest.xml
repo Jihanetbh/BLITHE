@@ -13,6 +13,22 @@
         android:theme="@style/Theme.Design.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".WishListAct"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ProfileAct"
+            android:exported="false"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".welcomeactivity"
             android:exported="true">
             <intent-filter>
@@ -27,20 +43,16 @@
         </activity>
         <activity
             android:name=".SignInAct"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SignUpAct"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".HomeAct"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".signupsigninact"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
