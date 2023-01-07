@@ -29,23 +29,23 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <TextView
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="500dp"
+        android:shadowColor="#000000"
+        android:shadowDx="-3"
+        android:shadowDy="6"
+        android:shadowRadius="12"
         android:text="@string/sign_up"
         android:textAlignment="center"
         android:textColor="#BF40BF"
         android:textSize="14pt"
         android:textStyle="bold"
-        android:shadowColor="#000000"
-        android:shadowDx="-3"
-        android:shadowDy="6"
-        android:shadowRadius="12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135"
         tools:ignore="HardcodedText" />
 
     <ImageView
@@ -138,9 +138,10 @@
         android:layout_width="347dp"
         android:layout_height="20dp"
         android:src="@drawable/whiteline"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="180dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -148,9 +149,10 @@
         android:layout_width="347dp"
         android:layout_height="20dp"
         android:src="@drawable/whiteline"
+        android:layout_marginTop="225dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="225dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -158,19 +160,21 @@
         android:layout_width="347dp"
         android:layout_height="20dp"
         android:src="@drawable/whiteline"
+        android:layout_marginTop="270dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="270dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="347dp"
         android:layout_height="20dp"
+        android:layout_marginTop="325dp"
         android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="315dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -178,21 +182,24 @@
         android:layout_width="347dp"
         android:layout_height="20dp"
         android:src="@drawable/whiteline"
+        android:layout_marginTop="370dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="360dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="35dp"
         android:text="@string/username"
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -203,20 +210,24 @@
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="205dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="35dp"
         android:text="@string/e_mail"
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -224,11 +235,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="35dp"
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="295dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -236,11 +249,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/confirm_password"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="35dp"
         android:textColor="#FFFFFF"
         android:textSize="8pt"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
