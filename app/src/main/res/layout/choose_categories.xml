@@ -505,7 +505,7 @@
         android:layout_height="63dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/croix_croix"
+        android:src="@drawable/croixcroix"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -515,7 +515,7 @@
         android:layout_height="63dp"
         android:layout_marginStart="370dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/croix_croix"
+        android:src="@drawable/croixcroix"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -526,7 +526,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.79"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/croix_croix3"
+        app:srcCompat="@drawable/croixcroix3"
         tools:layout_editor_absoluteY="680dp"
         tools:ignore="MissingConstraints" />
 

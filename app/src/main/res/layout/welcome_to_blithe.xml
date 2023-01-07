@@ -108,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/blury_line"
+        app:srcCompat="@drawable/bluryline"
         tools:layout_editor_absoluteY="51dp"
         tools:ignore="MissingConstraints"
         android:contentDescription="@string/blury_line" />
@@ -119,7 +119,7 @@
         android:layout_height="51dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/blury_line"
+        app:srcCompat="@drawable/bluryline"
         tools:layout_editor_absoluteY="308dp"
         tools:ignore="MissingConstraints"
         android:contentDescription="@string/blury_line" />

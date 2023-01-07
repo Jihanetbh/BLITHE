@@ -85,7 +85,7 @@
         android:layout_height="63dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/croix_croix"
+        android:src="@drawable/croixcroix"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -95,7 +95,7 @@
         android:layout_height="63dp"
         android:layout_marginStart="370dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/croix_croix"
+        android:src="@drawable/croixcroix"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -106,7 +106,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/croix_croix3"
+        app:srcCompat="@drawable/croixcroix3"
         tools:layout_editor_absoluteY="610dp"
         tools:ignore="MissingConstraints" />
 
@@ -137,7 +137,7 @@
         android:id="@+id/imageView14"
         android:layout_width="347dp"
         android:layout_height="20dp"
-        android:src="@drawable/white_line"
+        android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="180dp"
@@ -147,7 +147,7 @@
         android:id="@+id/imageView15"
         android:layout_width="347dp"
         android:layout_height="20dp"
-        android:src="@drawable/white_line"
+        android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="225dp"
@@ -157,7 +157,7 @@
         android:id="@+id/imageView18"
         android:layout_width="347dp"
         android:layout_height="20dp"
-        android:src="@drawable/white_line"
+        android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="270dp"
@@ -167,7 +167,7 @@
         android:id="@+id/imageView19"
         android:layout_width="347dp"
         android:layout_height="20dp"
-        android:src="@drawable/white_line"
+        android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="315dp"
@@ -177,7 +177,7 @@
         android:id="@+id/imageView20"
         android:layout_width="347dp"
         android:layout_height="20dp"
-        android:src="@drawable/white_line"
+        android:src="@drawable/whiteline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="360dp"
