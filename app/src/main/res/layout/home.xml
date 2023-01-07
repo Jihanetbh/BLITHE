@@ -84,9 +84,9 @@
         android:layout_height="17dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="82dp" />
-        <!--android:background="@drawable/search"-->
-    <TextView
+        tools:layout_editor_absoluteY="82dp"
+        app:srcCompat="@drawable/searchfront" />
+        <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
