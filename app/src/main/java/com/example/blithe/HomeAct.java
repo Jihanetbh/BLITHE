@@ -1,11 +1,15 @@
 package com.example.blithe;
-
+import androidx.appcompat.app.ActionBar;
 import android.content.Intent;
+import android.view.MenuInflater;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -26,7 +30,6 @@ public class HomeAct extends AppCompatActivity {
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Set up the click listener for the image button
         mMenuButton.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +55,7 @@ public class HomeAct extends AppCompatActivity {
         // Handle the menu item clicks here
         switch (item.getItemId()) {
             case R.id.logout:
+                // Open the sign in activity
                 Intent signInIntent = new Intent(this, SignInAct.class);
                 startActivity(signInIntent);
                 return true;
