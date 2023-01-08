@@ -46,18 +46,16 @@
 
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="35dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/alines"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/alines"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView33"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -69,40 +67,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView33"
-        android:layout_width="284dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="58dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rectangleunfilled"
-        tools:layout_editor_absoluteY="74dp"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="284dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rectangleunfilled"
+            tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="17dp"
         android:layout_height="17dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="82dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView33"
+        app:layout_constraintTop_toTopOf="@+id/imageView33"
+        app:layout_constraintStart_toStartOf="@+id/imageView33"
         app:srcCompat="@drawable/searchfront" />
+
         <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/search"
-        android:textColor="#FFFFFF"
-        android:textSize="8pt"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="78dp"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt"
+            android:layout_marginLeft="110dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+            app:layout_constraintTop_toTopOf="@+id/imageView33"
+            tools:ignore="MissingConstraints" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
         android:layout_width="420dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="0dp"
         android:background="#BF40BF"
         android:shadowColor="#000000"
         android:shadowDx="4"
@@ -115,16 +119,17 @@
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/home_button"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/materialToolbar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView

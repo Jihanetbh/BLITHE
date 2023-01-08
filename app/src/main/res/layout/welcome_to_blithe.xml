@@ -36,7 +36,7 @@
         android:textColor="#FFFFFF"
         android:textSize="11pt"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -52,6 +52,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18pt"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -69,6 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.6"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -79,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/controller"
         tools:ignore="MissingConstraints" />
 
@@ -122,12 +124,13 @@
         android:id="@+id/imageView7"
         android:layout_width="303dp"
         android:layout_height="51dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        android:contentDescription="@string/blury_line"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
         app:srcCompat="@drawable/bluryline"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="@string/blury_line" />
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
