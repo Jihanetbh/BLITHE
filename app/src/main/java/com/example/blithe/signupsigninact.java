@@ -30,11 +30,11 @@ public class signupsigninact extends AppCompatActivity {
         });
     }
     public void openSignUp() {
-        Intent intent = new Intent(this,SignUpAct.class);
+        Intent intent = new Intent(signupsigninact.this,SignUpAct.class);
         startActivity(intent);
     }
     public void openSignIn() {
-        Intent intent = new Intent(this,SignInAct.class);
+        Intent intent = new Intent(signupsigninact.this,SignInAct.class);
         startActivity(intent);
     }
 
