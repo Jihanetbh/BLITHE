@@ -25,7 +25,7 @@ public class SignInAct extends AppCompatActivity {
     private EditText mEmailField;
     private EditText mPasswordField;
 
-    FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class SignInAct extends AppCompatActivity {
             loginUser();
         });
         back2.setOnClickListener(view -> {
-            startActivity(new Intent(SignInAct.this, welcomeactivity.class));
+            startActivity(new Intent(SignInAct.this, signupsigninact.class));
 
         });
 
@@ -60,12 +60,13 @@ public class SignInAct extends AppCompatActivity {
             mPasswordField.setError("Password cannot be empty");
             mPasswordField.requestFocus();
         } else {
-            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(SignInAct.this, "User signed in successfully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SignInAct.this, HomeAct.class));
+                        finish();
                     } else {
                         Toast.makeText(SignInAct.this, "Sign in Error:" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 

@@ -16,10 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+
 
 public class SignUpAct extends AppCompatActivity {
     private ImageButton back1;
@@ -45,7 +42,7 @@ public class SignUpAct extends AppCompatActivity {
         });
 
         back1.setOnClickListener(view -> {
-            startActivity(new Intent(SignUpAct.this, welcomeactivity.class));
+            startActivity(new Intent(SignUpAct.this, signupsigninact.class));
 
         });
     }
@@ -65,8 +62,9 @@ public class SignUpAct extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(SignUpAct.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpAct.this, "User signed in successfully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SignUpAct.this, SignInAct.class));
+                        finish();
                     }
                     else{
                         Toast.makeText(SignUpAct.this, "Registration Error:" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -81,5 +79,7 @@ public class SignUpAct extends AppCompatActivity {
 
 
         }
-    }}
+
+    }
+    }
 
