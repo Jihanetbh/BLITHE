@@ -1,4 +1,5 @@
 package com.example.blithe;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -39,9 +40,11 @@ public class SignInAct extends AppCompatActivity {
         mPasswordField = findViewById(R.id.textView10);
 
         mAuth = FirebaseAuth.getInstance();
+
         confirm2.setOnClickListener(view -> {
             loginUser();
         });
+
         back2.setOnClickListener(view -> {
             startActivity(new Intent(SignInAct.this, signupsigninact.class));
 
@@ -50,16 +53,19 @@ public class SignInAct extends AppCompatActivity {
     }
 
     private void loginUser() {
+
         String email = mEmailField.getText().toString();
         String password = mPasswordField.getText().toString();
 
         if (TextUtils.isEmpty(email)) {
             mEmailField.setError("Email cannot be empty");
             mEmailField.requestFocus();
-        } else if (TextUtils.isEmpty(password)) {
+        }
+        else if (TextUtils.isEmpty(password)) {
             mPasswordField.setError("Password cannot be empty");
             mPasswordField.requestFocus();
-        } else {
+        }
+        else {
             mAuth.signInWithEmailAndPassword(email.trim(),password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {

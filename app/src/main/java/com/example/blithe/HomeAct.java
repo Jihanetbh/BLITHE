@@ -54,7 +54,6 @@ public class HomeAct extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.profile:
-                        Toast.makeText(HomeAct.this, "hihi you touched noot's profile", Toast.LENGTH_SHORT).show();
                         // Open the sign in activity
                         Intent OpenProfileIntent = new Intent(HomeAct.this, ProfileAct.class);
                         startActivity(OpenProfileIntent);
