@@ -2,12 +2,19 @@ package com.example.blithe;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -20,6 +27,7 @@ public class SignUpAct extends AppCompatActivity {
     private EditText mEmailField;
     private EditText mPasswordField;
     private EditText mPasswordConfirmationField;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,68 +38,48 @@ public class SignUpAct extends AppCompatActivity {
         mEmailField = findViewById(R.id.textView6);
         mPasswordField = findViewById(R.id.textView7);
         mPasswordConfirmationField = findViewById(R.id.textView8);
-        back1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goback();
-            }
+
+        mAuth = FirebaseAuth.getInstance();
+        confirm1.setOnClickListener(view -> {
+            createUser();
         });
-        confirm1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Confirm1();
-            }
+
+        back1.setOnClickListener(view -> {
+            startActivity(new Intent(SignUpAct.this, welcomeactivity.class));
+
         });
     }
 
-
-    public void goback() {
-        Intent intent = new Intent(this, signupsigninact.class);
-        startActivity(intent);
-    }
-    public void Confirm1() {
-        Intent intent = new Intent(this, HomeAct.class);
-        startActivity(intent);
-    }
-    public void signUp(View view) {
+    private void createUser() {
         String email = mEmailField.getText().toString();
         String password = mPasswordField.getText().toString();
-        String passwordConfirmation = mPasswordConfirmationField.getText().toString();
 
-        // Validate the entered data
-        if (isValidEmail(email) && isValidPassword(password) && password.equals(passwordConfirmation)) {
-            // Data is valid, add the email and password combination to shared preferences
-            SharedPreferences preferences = getSharedPreferences("users", MODE_PRIVATE);
-            Set<String> emails = preferences.getStringSet("emails", new HashSet<String>());
-            emails.add(email);
-            preferences.edit().putStringSet("emails", emails).apply();
-
-            Map<String, String> passwords = (Map<String, String>) preferences.getAll().get("passwords");
-            if (passwords == null) {
-                passwords = new HashMap<>();
-            }
-            passwords.put(email, password);
-            preferences.edit().putString("passwords", String.valueOf(passwords)).apply();
-
-            // Show a success message
-            Toast.makeText(this, "Success: Account created", Toast.LENGTH_SHORT).show();
-
-            // Go back to the login activity
-            Intent loginIntent = new Intent(this, SignInAct.class);
-            startActivity(loginIntent);
+        if (TextUtils.isEmpty(email)) {
+            mEmailField.setError("Email cannot be empty");
+            mEmailField.requestFocus();
+        } else if (TextUtils.isEmpty(password)) {
+            mPasswordField.setError("Password cannot be empty");
+            mPasswordField.requestFocus();
         } else {
-            // Data is invalid, show an error message
-            Toast.makeText(this, "Error: Invalid sign up information", Toast.LENGTH_SHORT).show();
+            mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()){
+                        Toast.makeText(SignUpAct.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SignUpAct.this, SignInAct.class));
+                    }
+                    else{
+                        Toast.makeText(SignUpAct.this, "Registration Error:" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+            });
+            {
+
+
+            }
+
+
         }
-    }
+    }}
 
-    private boolean isValidEmail(String email) {
-        // Add email validation code here
-        return true;
-    }
-
-    private boolean isValidPassword(String password) {
-        // Add password validation code here
-        return true;
-    }
-}

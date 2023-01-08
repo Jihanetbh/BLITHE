@@ -1,12 +1,19 @@
 package com.example.blithe;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Map;
 import java.util.Set;
@@ -17,6 +24,8 @@ public class SignInAct extends AppCompatActivity {
     private ImageButton confirm2;
     private EditText mEmailField;
     private EditText mPasswordField;
+
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,60 +38,42 @@ public class SignInAct extends AppCompatActivity {
         mEmailField = findViewById(R.id.textView9);
         mPasswordField = findViewById(R.id.textView10);
 
-        back2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goback2();
-            }
+        mAuth = FirebaseAuth.getInstance();
+        confirm2.setOnClickListener(view -> {
+            loginUser();
         });
-        confirm2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Confirm();
-            }
+        back2.setOnClickListener(view -> {
+            startActivity(new Intent(SignInAct.this, welcomeactivity.class));
+
         });
+
     }
 
-    public void goback2() {
-        Intent intent = new Intent(this, signupsigninact.class);
-        startActivity(intent);
-    }
-    public void Confirm() {
-        Intent intent = new Intent(this, HomeAct.class);
-        startActivity(intent);
-    }
-    public void signIn(View view) {
+    private void loginUser() {
         String email = mEmailField.getText().toString();
         String password = mPasswordField.getText().toString();
 
-        // Check if the entered email and password match a stored combination
-        if (emailExists(email) && passwordMatches(email, password)) {
-            // Login credentials are correct, start the main activity
-            Intent mainIntent = new Intent(this, MainActivity.class);
-            startActivity(mainIntent);
+        if (TextUtils.isEmpty(email)) {
+            mEmailField.setError("Email cannot be empty");
+            mEmailField.requestFocus();
+        } else if (TextUtils.isEmpty(password)) {
+            mPasswordField.setError("Password cannot be empty");
+            mPasswordField.requestFocus();
         } else {
-            // Login credentials are incorrect, show an error message
-            Toast.makeText(this, "Error: Invalid login credentials", Toast.LENGTH_SHORT).show();
-        }
-    }
-    private boolean emailExists(String email) {
-        // Get the stored emails from shared preferences
-        Set<String> emails = getSharedPreferences("users", MODE_PRIVATE).getStringSet("emails", null);
-        if (emails == null) {
-            return false;
-        }
-        // Check if the entered email is in the stored emails set
-        return emails.contains(email);
-    }
+            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(SignInAct.this, "User signed in successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SignInAct.this, HomeAct.class));
+                    } else {
+                        Toast.makeText(SignInAct.this, "Sign in Error:" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
-    private boolean passwordMatches(String email, String password) {
-        // Get the stored passwords from shared preferences
-        Map<String, String> passwords = (Map<String, String>) getSharedPreferences("users", MODE_PRIVATE).getAll().get("passwords");
-        if (passwords == null) {
-            return false;
+                    }
+                }
+            });
+
         }
-        // Check if the entered password matches the stored password for the given email
-        return password.equals(passwords.get(email));
     }
 }
 
