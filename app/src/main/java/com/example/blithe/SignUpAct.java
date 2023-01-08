@@ -73,7 +73,7 @@ public class SignUpAct extends AppCompatActivity {
             mPasswordField.setError("Password cannot be empty");
             mPasswordField.requestFocus();
         }
-        else if  (passcon!=password) {
+        else if (!passcon.equals(password)) {
             mPasswordConfirmationField.setError("Password and its confirmation are not compatible");
             mPasswordConfirmationField.requestFocus(); }
         else {
