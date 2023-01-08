@@ -60,7 +60,7 @@ public class SignInAct extends AppCompatActivity {
             mPasswordField.setError("Password cannot be empty");
             mPasswordField.requestFocus();
         } else {
-            mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            mAuth.signInWithEmailAndPassword(email.trim(),password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
