@@ -24,7 +24,10 @@ public class SignUpAct extends AppCompatActivity {
     private EditText mEmailField;
     private EditText mPasswordField;
     private EditText mPasswordConfirmationField;
-    FirebaseAuth mAuth;
+    private EditText mUsernameField;
+    private EditText mFullName;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,8 @@ public class SignUpAct extends AppCompatActivity {
         mEmailField = findViewById(R.id.textView6);
         mPasswordField = findViewById(R.id.textView7);
         mPasswordConfirmationField = findViewById(R.id.textView8);
+        mUsernameField = findViewById(R.id.textView4);
+        mFullName = findViewById(R.id.textView5);
 
         mAuth = FirebaseAuth.getInstance();
         confirm1.setOnClickListener(view -> {
@@ -50,15 +55,29 @@ public class SignUpAct extends AppCompatActivity {
     private void createUser() {
         String email = mEmailField.getText().toString();
         String password = mPasswordField.getText().toString();
+        String passcon = mPasswordConfirmationField.getText().toString();
+        String username = mUsernameField.getText().toString();
+        String fullname = mFullName.getText().toString();
 
-        if (TextUtils.isEmpty(email)) {
-            mEmailField.setError("Email cannot be empty");
-            mEmailField.requestFocus();
-        } else if (TextUtils.isEmpty(password)) {
+
+        if (TextUtils.isEmpty(username)) {
+            mUsernameField.setError("username cannot be empty");
+            mUsernameField.requestFocus();
+        }else if (TextUtils.isEmpty(fullname)) {
+            mFullName.setError("fullname cannot be empty");
+            mFullName.requestFocus();}
+        else if (TextUtils.isEmpty(email)) {
+             mEmailField.setError("Email cannot be empty");
+             mEmailField.requestFocus();}
+        else if (TextUtils.isEmpty(password)) {
             mPasswordField.setError("Password cannot be empty");
             mPasswordField.requestFocus();
-        } else {
-            mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        }
+        else if  (passcon!=password) {
+            mPasswordConfirmationField.setError("Password and its confirmation are not compatible");
+            mPasswordConfirmationField.requestFocus(); }
+        else {
+            mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
