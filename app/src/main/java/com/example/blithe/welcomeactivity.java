@@ -17,7 +17,7 @@ public class welcomeactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_to_blithe);
-        start =(Button) findViewById(R.id.GetStarted);
+        start = (Button) findViewById(R.id.GetStarted);
         mAuth = FirebaseAuth.getInstance();
         start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,12 +31,13 @@ public class welcomeactivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @Override
+    /*@Override
     protected void onStart() {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if (user == null){
             startActivity(new Intent(this,welcomeactivity.class));
         }
+    }*/
     }
-}
+
