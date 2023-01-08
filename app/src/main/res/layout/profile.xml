@@ -176,7 +176,7 @@
         android:id="@+id/materialToolbar"
         android:layout_width="420dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="0dp"
         android:background="#BF40BF"
         android:shadowColor="#000000"
         android:shadowDx="4"
@@ -192,10 +192,11 @@
         android:id="@+id/home_button"
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="0dp"
         android:background="@drawable/home"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
